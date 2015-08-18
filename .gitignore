@@ -194,3 +194,5 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+src/CattleTrack/CattleTrack/Project_Readme.html
+src/CattleTrack/CattleTrack/Service References/Application Insights/ConnectedService.json
