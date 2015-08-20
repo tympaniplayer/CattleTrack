@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CattleTrack.Web", "CattleTrack\CattleTrack.Web.csproj", "{020C5D57-0576-41B1-AE47-9447B9BE9F69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CattleTrack.Web", "CattleTrack.Web\CattleTrack.Web.csproj", "{020C5D57-0576-41B1-AE47-9447B9BE9F69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CattleTrack.Tests", "CattleTrack.Tests\CattleTrack.Tests.csproj", "{6FF5F0FE-B5F7-447F-B773-218A3F310CA3}"
 EndProject
