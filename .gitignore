@@ -196,3 +196,14 @@ FakesAssemblies/
 *.opt
 src/CattleTrack/CattleTrack/Project_Readme.html
 src/CattleTrack/CattleTrack/Service References/Application Insights/ConnectedService.json
+
+node_modules
+
+jspm_packages
+
+bower_components
+.idea
+.DS_STORE
+/dist
+build/reports
+
