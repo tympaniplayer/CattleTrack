@@ -1,0 +1,28 @@
+{
+  "name": "cattletrack",
+  "version": "1.0.0",
+  "description": "An app to keep track of your cattle. Nancy Backend with React / flux frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tympaniplayer/cattletrack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tympaniplayer/cattletrack/issues"
+  },
+  "homepage": "https://github.com/tympaniplayer/cattletrack#readme",
+  "dependencies": {
+    "alt": "^0.18.1",
+    "babel": "^6.3.13",
+    "material-ui": "^0.13.4",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-tap-event-plugin": "^0.2.1",
+    "webpack": "^1.12.9"
+  }
+}
