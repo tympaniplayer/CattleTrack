@@ -11,6 +11,6 @@ namespace CattleTrack.Web
         public HelloModule()
         {
             Get["/"] = parameters => "Hello World";
-            
+        }
     }
 }
