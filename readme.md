@@ -1,6 +1,7 @@
 # Cattle Track
 
 To get the client ready to serve from the nancy run the following commands
+
 1. `cd client`
 2. `npm install` This will install all of the dependencies
 3. `webpack` This will build the javascript
