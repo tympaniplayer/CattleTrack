@@ -11,6 +11,7 @@ import ThemeDecorator from 'material-ui/lib/styles/theme-decorator';
 
 import {Router, Route, Link} from 'react-router';
 import CattleStore from '../stores/CattleStore';
+import {connect} from 'alt-react'
 
 @connectToStores
 @ThemeDecorator(ThemeManager.getMuiTheme(Theme))
@@ -21,13 +22,6 @@ class App extends React.Component {
       message: "Hello, World!"
     }
   };
-
-  static getStores(){
-    return [CattleStore];
-  }
-  static getPropsFromStores(){
-    return CattleStore.getState();
-  }
 
   render(){
     return(
@@ -44,6 +38,19 @@ class App extends React.Component {
     );
   }
 }
+
+
+  connect(App, {
+    listenTo(){
+      return [CattleStore]
+    },
+
+    getProps(){
+      return {
+        state: CattleStore.getState()
+      }
+    }
+  })
 
 // Router
 render((
