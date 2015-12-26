@@ -1,11 +1,11 @@
 var path = require('path');
 var webpack = require('webpack');
-
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
   devtool: 'eval-source-map',
   entry:{
     main:[
-      './src/main.js'
+      './src/components/App.jsx'
     ]
   },
   output: {
@@ -20,7 +20,17 @@ module.exports = {
         query:{
           presets:['react','es2015']
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('css!sass')
       }
     ]
-  }
+  },
+  plugins:[
+    new ExtractTextPlugin('./public/style.css', {
+      allChunks: true,
+      disable: false
+    })
+  ]
 }

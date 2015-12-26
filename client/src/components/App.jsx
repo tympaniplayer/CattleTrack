@@ -1,10 +1,18 @@
+require('../sass/main.scss');
+
 import React from 'react';
+import { render } from 'react-dom';
 import AppBar from 'material-ui/lib/app-bar';
+import About from './About.jsx';
 
 import Theme from './theme/theme.js';
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
 import ThemeDecorator from 'material-ui/lib/styles/theme-decorator';
 
+import {Router, Route, Link} from 'react-router';
+import CattleStore from '../stores/CattleStore';
+
+@connectToStores
 @ThemeDecorator(ThemeManager.getMuiTheme(Theme))
 class App extends React.Component {
   constructor(){
@@ -14,6 +22,13 @@ class App extends React.Component {
     }
   };
 
+  static getStores(){
+    return [CattleStore];
+  }
+  static getPropsFromStores(){
+    return CattleStore.getState();
+  }
+
   render(){
     return(
       <div>
@@ -21,9 +36,20 @@ class App extends React.Component {
           marginBottom: "10px"
         }}/>
         <div>{this.state.message}</div>
+        <ul>
+          <li><Link to="/about">About</Link></li>
+        </ul>
+        {this.props.children}
       </div>
     );
   }
 }
 
-export default App;
+// Router
+render((
+  <Router>
+    <Route path="/" component={App}>
+      <Route path="/about" component={About} />
+    </Route>
+  </Router>
+), document.getElementById('container'))
