@@ -1,15 +1,9 @@
 import alt from '../alt';
+import {decorate} from 'alt-utils/lib/decorators'
 
-class CattleSTore{
-  constructor(){
-    this.state = {cattle: [
-      {
-        id: 1,
-        name: 'Molly',
-        dob: '2013-2-2',
-        sex: 'f'
-      }
-    ]};
+class CattleStore{
+    constructor(){
+      this.state = {testMessage: "Hello World!"}
   }
 }
 

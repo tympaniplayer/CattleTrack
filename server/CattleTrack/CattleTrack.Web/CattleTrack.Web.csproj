@@ -62,6 +62,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="client\style.css" />
     <Content Include="views\index.html" />
     <Content Include="client\main.js" />
     <Content Include="icon.png" />
