@@ -1,7 +1,7 @@
 import React from 'react';
-import AltContainer from 'alt-container';
+import connectToStores from 'alt-utils/lib/connectToStores';
 import CattleStore from '../stores/CattleStore.js';
-
+import CattleView from './Cattle/CattleView.jsx';
 @connectToStores
 class About extends React.Component {
   constructor(){
@@ -17,10 +17,9 @@ class About extends React.Component {
   }
 
   render(){
+   let {cattle} = this.props;
     return (
-      <div>
-        {this.props.testMessage}
-      </div>
+        <CattleView cattle={cattle[0]} />
     )
   }
 }
