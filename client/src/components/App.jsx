@@ -29,7 +29,7 @@ class App extends React.Component {
           }}
           onLeftIconButtonTouchTap={this.handleToggle}
         />
-        <LeftNav
+        <LeftNav />
         {this.props.children}
       </div>
     );
